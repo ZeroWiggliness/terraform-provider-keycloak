@@ -7,6 +7,7 @@ import (
 	"crypto/x509"
 	"encoding/json"
 	"fmt"
+	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"io/ioutil"
 	"net/http"
 	"net/http/cookiejar"
@@ -15,8 +16,6 @@ import (
 	"regexp"
 	"strings"
 	"time"
-
-	"github.com/hashicorp/terraform-plugin-log/tflog"
 
 	"github.com/hashicorp/go-version"
 
