@@ -3,7 +3,9 @@ Terraform provider for [Keycloak](https://www.keycloak.org/).
 
 ## Docs
 
-All documentation for this provider can now be found on the Terraform Registry: https://registry.terraform.io/providers/mrparkers/keycloak/latest/docs
+Clone of https://registry.terraform.io/providers/mrparkers/keycloak but with keycloak_openid_propertymapper_claim_protocol_mapper.  A PR has been made on the offical one.  Maybe I will add other things to this if I need them also.
+
+All documentation for this provider can now be found on the Terraform Registry: https://registry.terraform.io/providers/zerowiggliness/keycloak/latest/docs
 
 ## Installation
 
@@ -13,7 +15,7 @@ This provider can be installed automatically using Terraform >=0.13 by using the
 terraform {
   required_providers {
     keycloak = {
-      source = "mrparkers/keycloak"
+      source = "zerowiggliness/keycloak"
       version = ">= 4.0.0"
     }
   }
