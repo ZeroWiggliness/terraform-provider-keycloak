@@ -25,11 +25,11 @@ func main() {
 
 	opts := &plugin.ServeOpts{
 		Debug: debugMode,
-
 		// TODO: update this string with the full name of your provider as used in your configs
 		ProviderAddr: "registry.terraform.io/zerowiggliness/keycloak",
-
-		ProviderFunc: provider.New(version),
+		ProviderFunc: func() *schema.Provider {
+			return provider.KeycloakProvider(nil)
+		},
 	}
 
 	plugin.Serve(opts)
